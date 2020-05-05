@@ -1,0 +1,582 @@
+@charset "utf-8";
+
+/*
+ * コンテンツ内共通
+ * ファーストビュー
+ * M&Aを仕事にするために、ディールマネージャーがベストな理由
+ * ディールマネージャーの代表的な３つの機能
+ * 各種プランと料金
+ * サービスご利用開始までの流れ
+ * SP
+*/
+
+/* =========================================================
+コンテンツ内共通
+========================================================= */
+.section {
+  padding: 47px 0;
+}
+
+/* セクションタイトル */
+.section-title {
+  font-size: 21px;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 0.15em;
+  color: #34a853;
+  margin: 0 0 45px;
+}
+.section-title br {
+  display: none;
+}
+
+/* 見出し */
+.heading {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.section p {
+  line-height: 1.7;
+}
+
+/* ボタン */
+.button {
+  width: 100%;
+  max-width: 296px;
+}
+.button a {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1;
+  text-align: left;
+  color: #34a853;
+  width: 100%;
+  display: block;
+  background-color: #f5f5f5;
+  border: solid 1px #34a853;
+  border-radius: 40px;
+  padding: 19px 32px;
+  position: relative;
+}
+.button a::after {
+  content: '';
+  width: 24px;
+  height: 24px;
+  background: url(../img/arrow-right.svg) no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 14px;
+  right: 16px;
+}
+
+/* ボタン：背景グリーン */
+.button.button-green a {
+  background-color: #34a853;
+  color: #fff;
+}
+
+/* =========================================================
+ファーストビュー
+========================================================= */
+.eyecatch {
+  background: #f5f5f5;
+}
+
+.eyecatch-heading {
+  width: 740px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  background: url(../img/img-laptop.svg) no-repeat right center;
+  margin: 0 auto;
+}
+.eyecatch-heading-text p {
+  font-weight: bold;
+  line-height: 1.4;
+}
+.eyecatch-heading .main-text {
+  font-size: 36px;
+  color: #34a853;
+}
+.eyecatch-heading .sub-text {
+  font-size: 20px;
+}
+
+.eyecatch-buttons {
+  width: 624px;
+  display: flex;
+  justify-content: space-between;
+  margin: 32px auto 0;
+}
+
+/* =========================================================
+M&Aを仕事にするために、ディールマネージャーがベストな理由
+========================================================= */
+.reasons ul {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 47px;
+}
+
+.reason {
+  width: 300px;
+  text-align: center;
+}
+.reason .heading {
+  height: 64px;
+  text-align: center;
+  margin: 14px 0 0;
+}
+.reason p {
+  text-align: left;
+}
+.reason p .small-text {
+  font-size: 12px;
+  color: #757575;
+  display: block;
+  margin: 10px 0 0;
+}
+
+.reasons .button {
+  margin: 0 auto;
+}
+
+/* =========================================================
+ディールマネージャーの代表的な３つの機能
+========================================================= */
+.functions {
+  background: #f5f5f5;
+}
+.functions ul {
+  display: flex;
+}
+
+.function {
+  width: 320px;
+  text-align: center;
+}
+
+.function-number {
+  width: 310px;
+  text-align: left;
+  position: relative;
+  margin: 0 auto;
+}
+.function-number::before {
+  content: '';
+  width: 100%;
+  height: 2px;
+  display: block;
+  background: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.function-number > span {
+  font-size: 10px;
+  font-weight: bold;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+  color: #34a853;
+  display: inline-block;
+  border-bottom: 4px solid #34a853;
+  padding: 0 6px 0 0;
+  position: relative;
+}
+.function-number > span span {
+  font-size: 16px;
+}
+
+.function .heading {
+  height: 67px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 16px 0 0;
+}
+
+.function p {
+  text-align: left;
+  padding: 0 5px;
+}
+
+/* =========================================================
+各種プランと料金
+========================================================= */
+.plan-cards {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 45px;
+}
+.plan-card {
+  width: 296px;
+  border-radius: 8px;
+  background: #f5f5f5;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  padding: 30px;
+  margin: 0 12px;
+}
+
+.plan-card .heading {
+  text-align: center;
+}
+
+.plan-card-price {
+  font-size: 20px;
+  text-align: center;
+  line-height: 1 !important;
+  color: #34a853;
+  margin: 10px 0 30px;
+}
+.plan-card-price span {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.plan-card-price-free {
+  margin: 5px 0 0;
+}
+.plan-card-price-free span {
+  font-size: 40px;
+}
+
+.plan-card .bold-text {
+  font-weight: bold;
+}
+
+.plan-card dl dt {
+  font-weight: bold;
+  color: #34a853;
+  margin: 28px 0 11px;
+}
+.plan-card dl dt.underline {
+  text-decoration: underline;
+}
+
+.plan-card dl dd {
+  line-height: 1.7;
+}
+.plan-card dl dd .small-text {
+  font-size: 12px;
+  color: #757575;
+  display: block;
+  margin: 10px 0 0;
+}
+
+/* 料金詳細 */
+.price-detail {
+  width: 500px;
+  margin: 0 auto;
+}
+
+.price-detail .heading {
+  text-align: center;
+  margin: 0 0 22px;
+}
+
+.detail-table {
+  width: 100%;
+}
+.detail-table th,
+.detail-table td {
+  font-weight: bold;
+  text-align: center;
+  vertical-align: middle;
+  letter-spacing: normal;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 15px 0;
+}
+
+.detail-table th[scope='col'] {
+  width: 110px;
+  font-size: 14px;
+  padding: 9px 0;
+}
+
+.detail-table th[scope='row'] {
+  font-size: 12px;
+  text-align: left;
+  width: 140px;
+  vertical-align: top;
+  background: #f5f5f5;
+  padding: 14px 22px;
+}
+.detail-table th[scope='row'].short {
+  width: 1.5em;
+  border-bottom: none;
+  font-size: 10px;
+  font-weight: normal;
+  line-height: 1.1;
+  vertical-align: middle;
+  color: #757575;
+  padding: 0;
+}
+.detail-table th[scope='row'] span {
+  font-size: 10px;
+  fwn
+}
+.detail-table th[scope='row'] .small-text {
+  color: #757575;
+  display: block;
+}
+
+.detail-table td {
+  font-size: 16px;
+  text-align: center;
+}
+.detail-table td span {
+  font-size: 10px;
+}
+
+/* 横線、マル、バツ */
+.detail-table td .border,
+.detail-table td .circle,
+.detail-table td .cross {
+  width: 16px;
+  height: 16px;
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 12px;
+  margin: 0 auto;
+}
+.detail-table td .border {
+  background-image: url(../img/icon-border.svg);
+}
+.detail-table td .circle {
+  background-image: url(../img/icon-circle.svg);
+  background-size: 16px;
+}
+.detail-table td .cross {
+  background-image: url(../img/icon-cross.svg);
+}
+
+/* =========================================================
+サービスご利用開始までの流れ
+========================================================= */
+.service-flow {
+  background: #f5f5f5;
+}
+
+.flow {
+  width: 680px;
+  background-color: #f5f5f5;
+  border: solid 2px #34a853;
+  border-radius: 8px;
+  padding: 13px 25px;
+  margin: 0 auto 16px;
+  position: relative;
+}
+
+/* 下矢印 */
+.service-flow .down-arrow::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 8px 28px 0 28px;
+  border-color: #34a853 transparent transparent transparent;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.flow-number {
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: normal;
+  color: #fff;
+  line-height: 24px;
+
+  width: 24px;
+  height: 24px;
+  background-color: #34a853;
+  border-radius: 50%;
+  position: absolute;
+  top: 13px;
+  left: 13px;
+}
+.flow .heading {
+  margin: 0 0 2px 30px;
+}
+.flow p {
+  margin: 0 0 0 30px;
+}
+
+.flow .button {
+  margin: 15px auto 0;
+}
+
+/* プラス会員のみ */
+.flow + p {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.4;
+  text-align: center;
+  margin: 0 0 16px;
+  position: relative;
+}
+
+/* =========================================================
+SP
+========================================================= */
+@media screen and (max-width: 799px) {
+  /* コンテンツ内共通 */
+  .section-title {
+    font-size: 22px;
+  }
+  .section-title br {
+    display: block;
+  }
+
+  /* ファーストビュー */
+  .eyecatch {
+    padding-top: calc(48 * (100vw / 375));
+    padding-bottom: calc(40 * (100vw / 375));
+  }
+  .eyecatch-heading {
+    width: 100%;
+    height: calc(178 * (100vw / 375));
+    background-position: calc(178 * (100vw / 375)) center;
+    background-size: contain;
+    margin: 0 auto;
+  }
+  .eyecatch-heading-text {
+    padding-left: calc(24 * (100vw / 375));
+    padding-right: calc(24 * (100vw / 375));
+    padding-bottom: calc(20 * (100vw / 375));
+  }
+  .eyecatch-heading-text p {
+    line-height: 1.4;
+  }
+  .eyecatch-heading .main-text {
+    font-size: calc(26 * (100vw / 375));
+  }
+  .eyecatch-heading .sub-text {
+    font-size: calc(14 * (100vw / 375));
+  }
+  .eyecatch-buttons {
+    width: auto;
+    display: block;
+  }
+  .eyecatch-buttons .button {
+    margin: 0 auto;
+  }
+  .eyecatch-buttons .button + .button {
+    margin: 16px auto 0;
+  }
+
+  /* M&Aを仕事にするために、ディールマネージャーがベストな理由 */
+  .reasons .section-title {
+    margin: 0 0 14px;
+  }
+  .reasons ul {
+    display: block;
+    margin: 0;
+  }
+  .reason {
+    width: 100%;
+    padding: 0 32px;
+    margin: 0 0 25px;
+  }
+  .reason img {
+    width: 120px;
+  }
+  .reason .heading {
+    height: auto;
+    margin: 12px 0 14px;
+  }
+  .reason p .small-text {
+    margin: 0;
+  }
+  .reasons .button {
+    margin: 50px auto 0;
+  }
+
+  /* ディールマネージャーの代表的な３つの機能 */
+  .functions {
+    padding: 45px 0 0;
+  }
+  .functions ul {
+    padding: 0 8.5%;
+    display: block;
+  }
+  .function {
+    width: 100%;
+    margin: 0 0 55px;
+  }
+  .function .heading {
+    height: auto;
+    display: block;
+    margin: 20px 0 15px;
+  }
+  .function p {
+    padding: 0;
+    margin: 8px 0 0;
+  }
+
+  /* 各種プランと料金 */
+  .plan-cards {
+    display: block;
+    padding: 0 40px;
+  }
+  .plan-card {
+    width: 100%;
+    min-width: 296px;
+    border-radius: 8px;
+    margin: 0 auto 24px;
+  }
+
+  /* 料金詳細 */
+  .price-detail {
+    width: 100%;
+    padding: 0 16px;
+  }
+  .detail-table {
+    width: 100%;
+  }
+  .detail-table th[scope='row'] {
+    width: 100px;
+    padding: 15px 10px;
+  }
+
+  /* サービスご利用開始までの流れ */
+  .service-flow {
+    padding: 45px 16px 72px;
+  }
+  .flow {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 374px) {
+  /* コンテンツ内共通 */
+  .section-title {
+    font-size: 20px;
+  }
+
+  /* ディールマネージャーの代表的な３つの機能 */
+  .function .heading {
+    font-size: 16px;
+  }
+
+  /* 各種プランと料金 */
+  .plan-cards {
+    padding: 0 calc((100% - 296px) / 2);
+  }
+  .detail-table th {
+    font-size: 10px !important;
+  }
+
+  /* サービスご利用開始までの流れ */
+  .flow {
+    padding: 15px 10px;
+  }
+  .flow-number {
+    left: 9px;
+  }
+}
